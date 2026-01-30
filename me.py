@@ -24,7 +24,10 @@ equaltriangle(90)  """
 
 """ turtle.done() """
 
-def square(x):
+
+
+
+""" def square(x):
     for i in range(4):
         t.forward(90)
         t.left(90)
@@ -32,4 +35,15 @@ def square(x):
 
 for i in range(61):
     t.right(5)
-    square(90)
+    square(90) """
+
+def square(x):
+    for i in range(4):
+        t.forward(90)
+        t.left(90)        
+length = 5
+for i in range(61):
+    square(length, 90)
+    length += 5
+    t.right(5)
+turtle.done()

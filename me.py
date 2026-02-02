@@ -32,18 +32,35 @@ equaltriangle(90)  """
         t.forward(90)
         t.left(90)
         
-
-for i in range(61):
+    for i in range(61):
     t.right(5)
     square(90) """
 
-def square(x):
+
+""" length = 5
+def square(x,y):
     for i in range(4):
-        t.forward(90)
-        t.left(90)        
-length = 5
-for i in range(61):
+        t.forward(length)
+        t.left(90)
+        
+for i in range(60):
+    t.right(5)
     square(length, 90)
+    length += 5
+turtle.done() """
+
+t.speed(10)
+length=5
+def star (x,y):
+    for i in range (5):
+        t.forward(length)
+        t.left(144)
+
+for i in range (60):
+    star(length,144)
     length += 5
     t.right(5)
 turtle.done()
+
+
+
